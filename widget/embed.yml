@@ -1,0 +1,57 @@
+-
+  type: widget
+  data:
+    plugin: 'wf/embed'
+    method: embed
+    data:
+      type: script
+      file: /plugin/session/timeout/js/PluginSessionTimeout.js
+-
+  type: div
+  attribute:
+    class: modal
+    tabindex: '-1'
+    id: modal_session_timeout
+    data-backdrop: static
+    data-keyboard: 'false'
+  innerHTML:
+    -
+      type: div
+      attribute:
+        class: modal-dialog
+      innerHTML:
+        -
+          type: div
+          attribute:
+            class: modal-content
+          innerHTML:
+            -
+              type: div
+              attribute:
+                class: modal-header
+              innerHTML:
+                -
+                  type: h5
+                  attribute:
+                    class: modal-title
+                  innerHTML: 'Session timeout'
+            -
+              type: div
+              attribute:
+                class: modal-body
+              innerHTML:
+                -
+                  type: p
+                  innerHTML: 'Your session seems to have timed out.'
+            -
+              type: div
+              attribute:
+                class: modal-footer
+              innerHTML:
+                -
+                  type: button
+                  attribute:
+                    type: button
+                    class: 'btn btn-primary'
+                    onclick: "location.href='/'"
+                  innerHTML: 'Load start page'
