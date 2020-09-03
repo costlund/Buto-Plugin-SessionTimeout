@@ -25,4 +25,4 @@ function PluginSessionTimeout(){
   }
 }
 var PluginSessionTimeout = new PluginSessionTimeout();
-setInterval(function(){ PluginSessionTimeout.check(); }, 10000);
+setInterval(function(){ PluginSessionTimeout.check(); }, 60000);

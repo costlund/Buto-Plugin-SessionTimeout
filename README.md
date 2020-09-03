@@ -1,5 +1,6 @@
 # Buto-Plugin-SessionTimeout
 
+Check every 60 seconds if user is signed in. If not a modal is shown.
 
 ## Page
 
